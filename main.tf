@@ -24,8 +24,8 @@ resource "google_compute_instance" "dareit-vm-ci" {
 }
 
 resource "google_storage_bucket" "bucket_dareit_tf_ci" {
-  name     = "dareit-t7-tf-ci"
-  location = "US"
+  name          = "dareit-t7-tf-ci"
+  location      = "US"
   force_destroy = true
 
   uniform_bucket_level_access = true
