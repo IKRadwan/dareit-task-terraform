@@ -70,7 +70,7 @@
   - Go to the Settings tab
   - Choose "Actions" under the Security section
   - Click the button "New repository secret"
-  - Paste the content of the key file generated in **Step 3**
+  - Paste the content of the key file generated in **Step 2**
   - Name the secret "TF_GOOGLE_CREDENTIALS"
 
 </br>
@@ -83,7 +83,7 @@
 
 </br>
 
-  - **backend.tf** (provide the name of the bucket you created in **Step 2**)
+  - **backend.tf** (provide the name of the bucket you created in **Step 4**)
 
 ```
   terraform {  
@@ -248,7 +248,7 @@ jobs:
     
 </br>
 
-:point_right: To resolve the above error in Terraform Init, secret key has been updated on Github with no modified content (see **Step 4**) and all jobs in workflow re-run
+:point_right: To resolve the above error in Terraform Init, secret key has been updated on Github with no modified content (see **Step 3**) and all jobs in workflow re-run
 </br>
 :point_right: secret credentials block added to step Terraform Format:
 ```
@@ -259,7 +259,7 @@ env:
 
 </br>
 
-**Step 12** Once all steps are successfully completed, check the terraform state file on GCP (it should be created on a bucket created as per Step 5)
+**Step 12** Once all steps are successfully completed, check the terraform state file on GCP (it should be created on a bucket created in **Step 4**)
 
 </br> 
 
@@ -271,11 +271,11 @@ env:
 
 </br> 
 
-**Step 15** On your branch, modify on your local repository the code of the main.tf to add a new bucket 
+**Step 15** On feat/add-bucket branch in local repository, modify the code of the main.tf to add a new bucket 
 
 </br> 
 
-**Step 16** Commit the change and push to your repository on Github 
+**Step 16** Commit the change and push to the repository on Github 
 👉 no workflow run as per modified terraform.yml file
 
 </br> 
