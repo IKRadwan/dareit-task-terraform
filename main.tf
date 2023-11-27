@@ -14,7 +14,9 @@ resource "google_compute_instance" "dareit-vm-ci" {
       }
     }
   }
+*/
 
+/*
   network_interface {
     network = "default"
 
