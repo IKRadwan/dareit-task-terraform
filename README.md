@@ -6,6 +6,12 @@
 
 </br>
 
+>[!IMPORTANT]
+>Config files describing resources commented out due to GCP infrastrucutre cleanup for task 8 - terraform deactivated </br>
+>Below steps describe task that had been performed before cleanup
+
+</br>
+
 💪 **Task steps**
 
 </br>
@@ -288,6 +294,7 @@ env:
 📌As workflow failed on Terraform Format step, main file has been modified as per [Terraform guideline](https://developer.hashicorp.com/terraform/language/syntax/style)
 
 
+**Step 18** Modify terraform.yml so the workflow is also triggered for pushes
 
 
 
